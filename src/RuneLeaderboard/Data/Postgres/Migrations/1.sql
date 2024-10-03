@@ -16,7 +16,7 @@ CREATE TABLE "LeaderboardScores"
         FOREIGN KEY ("PlayerId") REFERENCES "Players" ("Id")
 );
 
-CREATE INDEX "Score_CreatedAt_IX" ON "LeaderboardScores" ("Score", CreatedAt);
+CREATE INDEX "Score_CreatedAt_IX" ON "LeaderboardScores" ("Score", "CreatedAt");
 
 CREATE MATERIALIZED VIEW "LeaderboardRankingsMat" AS
 SELECT
