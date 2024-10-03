@@ -1,9 +1,11 @@
 # RUNE GAMES LEADERBOARD CASE
 
-## Tech Stack:
+## Tech Stack / Libraries:
 - **.NET**
 - **PostgreSQL**
 - **Redis**
+- **Dapper**
+- **Hangfire**
 
 SQL scripts can be found at: `/Data/Postgres/Migrations/1.sql`
 
