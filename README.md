@@ -55,7 +55,7 @@ Player rankings are only calculated on PostgreSQL; although a SortedSet is used 
 
 ## Security:
 - The `/api/Leaderboard/MatchResult` endpoint is secured using a JWT token.
-- This endpoint typically uses the **MatchResultService**, but a second service, **MatchResultEncryptedService** is created for production.
+- This endpoint uses the **MatchResultService** for testing, but a second service **MatchResultEncryptedService** is created for production.
   - When a player submits their score to this endpoint, the game client encrypts the data using the AES algorithm with a key known only to the server and the game client. This ensures that even if the server endpoints are discovered, only the game client can send score data to them.
 
 ## Monitoring and Logging:
